@@ -1,3 +1,6 @@
 [submodule "RFModuleCommon"]
 	path = RFModuleCommon
 	url = https://github.com/aformusatii/RFModuleCommon
+[submodule "rf-common-lib"]
+	path = rf-common-lib
+	url = https://github.com/aformusatii/rf-common-lib
