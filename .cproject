@@ -38,7 +38,8 @@
 								<inputType id="de.innot.avreclipse.cppcompiler.input.1795254175" superClass="de.innot.avreclipse.cppcompiler.input"/>
 							</tool>
 							<tool id="de.innot.avreclipse.tool.linker.winavr.app.release.767232980" name="AVR C Linker" superClass="de.innot.avreclipse.tool.linker.winavr.app.release"/>
-							<tool id="de.innot.avreclipse.tool.cpplinker.app.release.1200019699" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.app.release">
+							<tool commandLinePattern="${COMMAND} ${FLAGS} ${OUTPUT_FLAG} ${OUTPUT_PREFIX}${OUTPUT} ${INPUTS}" id="de.innot.avreclipse.tool.cpplinker.app.release.1200019699" name="AVR C++ Linker" superClass="de.innot.avreclipse.tool.cpplinker.app.release">
+								<option id="de.innot.avreclipse.cpplinker.option.libs.1611490078" name="Libraries (-l)" superClass="de.innot.avreclipse.cpplinker.option.libs" useByScannerDiscovery="false" valueType="libs"/>
 								<inputType id="de.innot.avreclipse.tool.cpplinker.input.672290840" name="OBJ Files" superClass="de.innot.avreclipse.tool.cpplinker.input">
 									<additionalInput kind="additionalinputdependency" paths="$(USER_OBJS)"/>
 									<additionalInput kind="additionalinput" paths="$(LIBS)"/>
@@ -53,7 +54,8 @@
 						</toolChain>
 					</folderInfo>
 					<sourceEntries>
-						<entry excluding="test2|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry excluding="rf-common-lib|src" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
+						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="rf-common-lib"/>
 						<entry flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name="src"/>
 					</sourceEntries>
 				</configuration>
